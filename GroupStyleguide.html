@@ -1,0 +1,329 @@
+<html>
+	<head>
+		<title>SASS Style Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scal=1.0">
+		<meta charset=utf-8>
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      /*Hex color values for each section
+$background: #FFFFFF;
+$button: #EE3124;
+$main-text: #000000;
+$header: #0D0B0B;
+$list-header: #0D0B0B;
+$dashboard-icon-backgrounds: #0D0B0B;
+$header-text: #FFFFFF;
+$header-font: 'Montserrat', sans-serif;
+$text-font:'Montserrat', serif;
+
+/*Imported font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+
+/*CSS for the buttons
+/*submit{
+  font-size: 1.25rem;
+  font-family: $text-font;
+  background: $button;
+  border: white;
+  border-radius: 0.25em;
+  color: white;
+}
+//CSS for the links
+a{
+  font-size: 1.25rem;
+  font-family: $text-font;
+  border: white;
+  border-radius: 0.25em;
+  color: white;
+  margin: auto;
+}
+
+a:hover{
+  background: $button;
+  color: white;
+  text-decoration: none;
+}
+a2{
+  font-size: 1.25rem;
+  font-family: $text-font;
+  border: white;
+  border-radius: 0.25em;
+  color: white;
+  margin: auto;
+}
+
+a2:hover{
+  color: $button;
+  text-decoration: none;
+}*/
+
+/*Links for the logos
+  //https://lbccviking.com/wp-content/uploads/2018/02/lbcc.png
+  //https://smallbizla.org/wp-content/uploads/2016/04/LBCC-Logo-Copy.png
+  //https://citdlb.org/wp-content/uploads/2017/01/lb-logo.png
+*/
+@mixin light-text-font{
+	color: #000000
+}
+
+
+
+//These are for the nav on the style guide. Ignore this part
+.navbar{
+	background: white;	
+}
+
+.header-title{
+	font-family: 'Montserrat', sans-serif;
+	@include light-text-font;
+}
+
+.nav-link{
+	font-family: 'Montserrat', serif;
+}
+
+// This is the css for the styleguide continued
+.header-1{
+	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+  background-color: black;
+}
+
+.header-2{
+	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+  background-color: black;
+}
+
+.header-4{
+	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+  background-color: #0D0B0B;
+}
+
+.main-text{
+	font-family: 'Montserrat', serif;
+	@include light-text-font;
+}
+
+.color-primary{
+	height: 20%;
+}
+
+//
+.p1{
+	background: #FFFFFF;
+	color: black;
+}
+
+.p2{
+	background: #EE3124;
+	color: black;
+}
+
+.p3{
+	background: #0D0B0B;
+	color: white;
+}
+
+.p4{
+	background: #000000;
+	color: white;
+}
+
+.lighter-1{
+	background: #FFFFFF;
+}
+
+.darker-1{
+	background: #D0D0D0;
+	color: white;
+}
+
+.lighter-2{
+	background: #FF5F4F;
+}
+
+.darker-2{
+	background: #C01000;
+	color: white;
+}
+
+.lighter-3{
+	background: #2F2D2D;
+	color: white;
+}
+
+.darker-3{
+	background:#000000;
+	color: white;
+}
+
+.lighter-4{
+	background: #2F2F2F;
+  color: white;
+}
+
+.darker-4{
+	background:#000000;
+	color: white;
+}
+
+.white{
+  color: white;
+}
+.black{
+  background-color: black;
+}
+.underline{
+  text-decoration: underline;
+}
+.sub-1{
+  font-size: 1.25rem;
+  font-family: 'Montserrat', serif;
+  background: #EE3124;
+  border: white;
+  border-radius: 0.25em;
+  color: white;
+}
+
+.button{
+  font-size: 1.25rem;
+  font-family: 'Montserrat', serif;
+  border: white;
+  border-radius: 0.25em;
+  color: white;
+  margin: auto;
+}
+
+.button:hover{
+  background: #EE3124;
+  color: white;
+  text-decoration: none;
+}
+.button2{
+  font-size: 1.25rem;
+  font-family: 'Montserrat', serif;
+  border: white;
+  border-radius: 0.25em;
+  color: white;
+  margin: auto;
+}
+
+.button2:hover{
+  color: #EE3124;
+  text-decoration: none;
+}
+section{
+  background: #0D0B0B;
+  border-style: solid;
+  border-color: white;
+  text-align: center;
+}
+img{
+  height: auto;
+  width: 10rem;
+}
+    </style>
+	</head>
+	<body id="Home">
+		
+				<nav class="navbar navbar-expand-sm navbar-light">
+					<a href="#Home" class="navbar-brand header-title">SASS Style Guide</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu"><span class="navbar-toggler-icon"></span></button>
+				 	<div id="navbarMenu" class="collapse navbar-collapse">
+					 	<ul class="nav navbar-nav ml-auto">
+							<li class="nav-item"><a href="#color" class="nav-link">Color</a></li>
+							<li class="nav-item"><a href="#typography" class="nav-link">Typography</a></li>
+						</ul>
+					</div>
+				</nav>
+		
+<div class="row">
+	<div id="color" class="col-12 col-md-6 color-section">
+		<h2 class="section-header display-4 ml-4 mt-4 mb-4">color</h2>
+		<div class="color-primary row ml-3 mr-3 mt-3 text-center">
+			<div class="col-3 p1">background</div>
+			<div class="col-3 p2">button</div>
+			<div class="col-3 p3">header/footer</div>
+			<div class="col-3 p4">main-text</div>
+		</div>
+    		<div class="color-primary row ml-3 mr-3 mt-3 text-center">
+			<div class="col-3 p4">list heading</div>
+			<div class="col-3 p2">button</div>
+			<div class="col-3 p1">header-text</div>
+			<div class="col-3 p4">Dashboard icon backgrounds</div>
+		</div>
+		<div class="color-study row ml-3 mr-3 mt-3 text-center">
+			<div class="col-6 p1">primary</div>
+			<div class="col-3 lighter-1">light</div>
+			<div class="col-3 darker-1">dark</div>
+		</div>
+		<div class="color-study row ml-3 mr-3 mt-3 text-center">
+			<div class="col-6 p2">primary</div>
+			<div class="col-3 lighter-2">light</div>
+			<div class="col-3 darker-2">dark</div>
+		</div>
+		<div class="color-study row ml-3 mr-3 mt-3 text-center">
+			<div class="col-6 p3">primary</div>
+			<div class="col-3 lighter-3">light</div>
+			<div class="col-3 darker-3">dark</div>
+		</div>
+		<div class="color-study row ml-3 mr-3 mt-3 mb-5 text-center">
+			<div class="col-6 p4">primary</div>
+			<div class="col-3 lighter-4">light</div>
+			<div class="col-3 darker-4">dark</div>
+		  </div>
+    
+      <h1> Button Types </h1>
+    	<div class="row">
+         <br>
+        <section class="col-12 row"><a href="" class="button col-4">link</a> <a href="" class="button col-4">link</a> <a href="" class="button2 col-4">link</a></section>
+        <section class="col-6"> 
+          <input type="text" class="mt-4 mb-2" value="Username">
+           <input type="text" class="my-2" value="Password">
+          <input type="submit" class="my-2 sub-1" value="Register">
+          </section>
+ 
+        <section class="col-6"> <p class="white">
+Terry thomas barber shop quartet mexican’t horseshoe groucho mexican’t basil fawlty groucho-a-like horseshoe terry thomas Terry thomas barber shop quartet mexican’t horseshoe groucho mexican’t basil fawlty groucho-a-like horseshoe terry thomas?</p><a href="" class="button2 px-4 py-1 underline">link</a></section>
+      </div>
+	
+	</div>
+
+	<div id="typography" class="col-12 col-md-6 type-section">
+		<h2 class="section-header display-4 ml-4 mt-3">typography</h2>
+		<div class="row ml-5 mr-3 mt-3"><span class="header-1"><h1>h1-Long Beach <br><em>City College</em> <br><strong>Go Vikings</strong></h1></span>
+			</div>	
+		<div class="row ml-5 mr-3"><span class="header-2"><h2><em>h2-Menus</em></h2></span>
+			</div>	
+		<div class="row ml-5 mr-3"><span class="header-4"><h3><mark>h3-Dashboard</mark></h3></span>
+			</div>	
+		<div class="row ml-5 mr-3"><span class="header-4"><h4>h4-Login and sign Up </h4></span>
+			</div>
+		<div class="row ml-5 mr-3"><p class="main-text">
+Terry thomas barber shop quartet mexican’t horseshoe groucho-a-like lemmy, lemmy barber shop quartet nuremberg rally joseph stalin mexican’t basil fawlty groucho-a-like horseshoe terry thomas?</p>
+			</div>
+  <h1>LBCC Logos</h1> 
+   <div>
+     <img src="https://lbccviking.com/wp-content/uploads/2018/02/lbcc.png">
+     <img src="https://smallbizla.org/wp-content/uploads/2016/04/LBCC-Logo-Copy.png">
+
+    </div>
+   <div class="black">
+   <img src="https://citdlb.org/wp-content/uploads/2017/01/lb-logo.png">
+    </div>
+   	</div>
+</div>
+		
+		
+		<!-- script for navbar toggle -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
